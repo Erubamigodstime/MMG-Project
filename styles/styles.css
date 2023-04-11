@@ -70,19 +70,14 @@ ul li a{
     outline: none;
     cursor: pointer;
 }
-li span{
-    font-size: 20px;
+li span{    
     margin-right: 10px;
    
 }
 ul li:hover{
     background-color:#E3E3FF;    
     border-left:solid #0000ff 5px;
-    color: #0000ff;
-    font-size: 22px;
-    
-
-    
+    color: #0000ff;   
     
 }
 ul li a:hover{
@@ -279,9 +274,15 @@ footer{
 
 
 @media only screen and (max-width: 600px){
-    body{
-        font-size: 20px;
-    }
+   body{
+    font-size: 15px;
+   }
+   /* nav ul li{
+    padding: 10px;
+    display: block;
+    width: 300px;
+    font-size: 10px;
+    } */
     main{
         display: flex;
         flex-direction: column;
@@ -298,34 +299,33 @@ footer{
         font-size: 10px;
         width: 100%;
     }
-    nav{
+    nav{        
         left: 0;
         position: fixed;   
         height: 100%;    
         background-color: #fff;
         overflow: hidden;
         transform: width 0.2s linear;
-        width: 100px;
+        width: 92px;
     }
     a{
-        position: relative;
-        font-size: 14px;
+        position: relative;        
         display: table;
-        width: 300px;
-        padding: 10px;
+        width: 250px;
+        
     }
     .fa-solid{
         position: relative;
         width: 70px;
-        height: 40px;
+        height: 30px;
         top: 5px;
-        font-size: 20px;
+        font-size: 15px;
         text-align: center;
     }
     .menu{
         position: relative;
-        top: 12px;
-        margin-left: 10px;
+        /* top: 12px; */
+        margin-left: 5px;
     }
     /* a:hover{
         background-color: #eee;
@@ -340,6 +340,22 @@ footer{
     .dashboard{
         text-align: center;
         margin-bottom: 50px;
+    }
+    
+    .section{
+        width: 250px;
+    }
+    .text{
+        text-align: center;
+    }
+    .top-content{
+        display: none;
+    }
+    .inner-content{
+        font-size: 12px;
+    }
+    .item{
+        font-size: 13px;
     }
     
    
