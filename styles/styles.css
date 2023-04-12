@@ -306,9 +306,10 @@ footer{
         background-color: #fff;
         overflow: hidden;
         transform: width 0.2s linear;
-        width: 92px;
+        width: 40px;
     }
     a{
+        left: 0;
         position: relative;        
         display: table;
         width: 250px;
@@ -316,22 +317,22 @@ footer{
     }
     .fa-solid{
         position: relative;
-        width: 70px;
+        left: 0;
+        width: 25px;
         height: 30px;
         top: 5px;
         font-size: 15px;
-        text-align: center;
+        text-align: left;
     }
     .menu{
         position: relative;
-        /* top: 12px; */
-        margin-left: 5px;
+
+       
+        
     }
-    /* a:hover{
-        background-color: #eee;
-     */
+   
     nav:hover{
-        width: 280px;
+        width: 200px;
         transform: all 0.5s;
     }
     .middle-content, .left-content, .right-content{
