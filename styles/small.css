@@ -5,7 +5,12 @@
     outline: none;
     border: none;
 }
-
+.user{
+    display: none;
+}
+#first{
+    display: none;
+}
 :root{
     ------background-color:#F5F3F4 ;
     ------color:#ffff;
@@ -16,24 +21,6 @@
 body{
     background-color:#F5F3F4 ;
 }
-main{
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-gap: 40px;
-    width: 98%;
-    margin:  0 auto;
-}
-.middle{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-
-
-
-
-
 
 input{
     font-size: 20px;
@@ -51,10 +38,6 @@ input{
 .left-content p{
     color: red;
 }
-nav {   
-    width: 270px;
-    
-}
 ul li{
     padding: 15px;
     display: block;
@@ -70,19 +53,11 @@ ul li a{
     outline: none;
     cursor: pointer;
 }
-li span{    
+/* li span{    
     margin-right: 10px;
    
-}
-ul li:hover{
-    background-color:#E3E3FF;    
-    border-left:solid #0000ff 5px;
-    color: #0000ff;   
-    
-}
-ul li a:hover{
-    color: #0000ff;
-}
+} */
+
 .spanner{
     color: white;
     background-color: #0000ff;
@@ -132,39 +107,7 @@ ul li a:hover{
 .text{
     margin-top: 30px;
 }
-table{
-    display: block;
-}
-.table{
-    display: block;
-    border-collapse: collapse;
-    margin-top: 5px;    
-    background-color: #fff;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    box-shadow: 10px  10px 20px #949d91;
-}
 
-th, td{
-    padding: 10px;
-    text-align: center;
-}
-tr {
-  border-bottom: 1px solid #ddd;
-}
-.status{
-    color: yellow;
-    font-weight: bold;
-}
-.deals{
-    color: #4361ee;
-}
-
-tr:hover {
-    background-color: #D6EEEE;
-}
 .inner-content img{
     border-radius: 70%;
     width: 30px;
@@ -272,94 +215,130 @@ footer{
     cursor: pointer;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-@media only screen and (max-width: 600px){
-   body{
-    font-size: 15px;
-   }
-   /* nav ul li{
-    padding: 10px;
-    display: block;
-    width: 300px;
+.middle{
+    display: flex;
+    flex-direction: column;
+    
+}
+table{
+    display: none;
     font-size: 10px;
-    } */
-    main{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-   
-    .middle{
-        display: flex;
-        flex-direction: column;
-        
-    }
-    table{
-        display: none;
-        font-size: 10px;
-        width: 100%;
-    }
-    nav{        
-        left: 0;
-        position: fixed;   
-        height: 100%;    
-        background-color: #fff;
-        overflow: hidden;
-        transform: width 0.2s linear;
-        width: 40px;
-    }
-    a{
-        left: 0;
-        position: relative;        
-        display: table;
-        width: 250px;
-        
-    }
-    .fa-solid{
-        position: relative;
-        left: 0;
-        width: 25px;
-        height: 30px;
-        top: 5px;
-        font-size: 15px;
-        text-align: left;
-    }
-    .menu{
-        position: relative;
+    width: 100%;
+}
 
-       
-        
-    }
-   
-    nav:hover{
-        width: 200px;
-        transform: all 0.5s;
-    }
-    .middle-content, .left-content, .right-content{
-        margin-left: 100px;
-    }
-    .dashboard{
-        text-align: center;
-        margin-bottom: 50px;
-    }
-    
-    .section{
-        width: 250px;
-    }
-    .text{
-        text-align: center;
-    }
-    .top-content{
-        display: none;
-    }
-    .inner-content{
-        font-size: 12px;
-    }
-    .item{
-        font-size: 13px;
-    }
-    
-   
- }
-    
 
+
+.middle-content, .right-content{
+    margin-left: 100px;
+}
+.dashboard{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section{
+    width: 250px;
+}
+.text{
+    text-align: center;
+}
+.top-content{
+    display: none;
+}
+.inner-content{
+    font-size: 12px;
+}
+.item{
+    font-size: 13px;
+}
+.user{
+    top: 90px;
+    display: block;
+    left: 0;
+    position: absolute;
+}
+#fist{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.menu{
+    margin-left: 15px;
+}
+
+
+.user-img{        
+    width: 50px;
+    border-radius: 100%;
+    border: 1px solid gainsboro;
+}
+.left-content{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 100vh;
+    width: 80px;
+    background-color: #12171e;
+    padding: .4rem .8rem;
+    transition: all 0.5 ease;
+}
+#btn{
+    color: #dad7cd;
+}
+nav ul{
+    margin-top: 90px;
+    
+    
+}
+
+.left-content #btn{
+    position: absolute;
+    top: .4rem;
+    left: 50%;
+    font-size: 1.2rem;
+    line-height: 50px;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.left-content.active #btn{
+    left: 90%;
+}
+.left-content.active ~ .middle-content{
+    left: 250px; 
+    width: calc(100% - 250px);
+}
+.left-content.active{
+    width: 250px;
+} 
+
+.user {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+.user p{
+    color: #fff;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+.left-content p{
+    opacity: 0;
+}
+.left-content .menu{
+    opacity: 0;
+}
+.left-content.left-content.active .menu{
+    opacity: 1;
+}
+.left-content.left-content.active p {
+    opacity: 1;
+}

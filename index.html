@@ -4,21 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">    
+    <link rel="stylesheet" type="text/css" href="styles/small.css">
+    <link rel="stylesheet" type="text/css" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" href="styles/large.css">
+       
     <title>FM Help desk dashboard</title>
     <script src="https://kit.fontawesome.com/d13ead34ce.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <main>        
-        <div class="left-content">
+    <main>   
+
+        <div id="sideBar" class="left-content">
+            <P id="fist">  <strong class="fm">FM </strong> HELPDESK</P>
+            <i id="btn" class="fa-solid fa-bars"></i> 
+        <div class="user">
+            <img src="images/myself.webp" alt="image of myself" class="user-img">
+            <div>
+
+                <p class="bold" > Erubami</p>
+                <p> Godstime</p>
+            </div>
+        </div>
             <nav>
                 <P id="first">  <strong class="fm">FM </strong> HELPDESK</P>
-
                 <ul>
+
                     <li>
-                        <a href="#"> 
-                            <i class="fa-solid fa-bars"></i>                             
+                        <a href="#">                            
+                            <i class="fa-solid fa-bars"></i>                            
                             <span class="menu">Dashboard</span>
                         </a>
                     </li>
@@ -83,7 +97,7 @@
         <div class="middle-content">
             <section class="dashboard">
                 <h1>Dashboard</h1>
-                <input type="date" name="date" id=" date" value="1800-2023">
+                <input type="date" name="date" id=" date" >
             </section>
             <div class="middle">
                 <section class="section">
@@ -320,6 +334,7 @@
     <footer>
         <p class="last-text"> <a href="http://"> show all</a> </p>
         </footer>
+        <script src="scripts/scripts.js"></script>
       
 </body>
 </html>
