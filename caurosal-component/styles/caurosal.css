@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-div{   
+    margin-top: 250px;
+    width: 400px;
+    height: 300px;    
+   
+    
+}
+h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+button{
+    background-color: white;
+    font-size: 1.3rem;
+}
+.def{
+    border: none;
+    background-color: white;
+}
+.trr{
+    background-color: gray;
+    border: 4px solid yellow;
+    border-bottom: none;
+
+}
+.coo{
+    border: 4px solid green;
+    background-color: gray;
+    border-bottom: none;
+
+    
+}
+.fmm{
+    background-color: gray;
+    border: 4px solid  blue;
+    border-bottom: none;
+
+}
+.link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+    
+}
+.training{
+    border: 4px solid yellow;    
+    margin-bottom: 100%;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+}
+.links{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+button{
+    padding: 10px;
+}
+.text{
+    margin-bottom: 20px;
+}
+.text-image{
+    margin-top: 8px;
+    float: right;
+}
+
+.fm-services{
+    float: left;
+    border: 4px solid  blue;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    margin-bottom: 50px;
+
+}
+.consulting{
+    float: left;
+    border: 4px solid green;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    margin-bottom: 50px;
+    
+}
+img{
+    width: 100%;
+    max-width: 100%;
+}
+.component .consulting{
+    display: none;
+}
+.component .fm-services{
+    display: none;
+}
+.component .training{
+    display: block;
+}
+
+
+
+.con .training{
+    display:none;
+}
+.con .consulting{
+    display: block;
+}
+.con .fm-services{
+    display: none;
+}
+
+
+.fm .training{
+    display: none;
+}
+.fm .consulting{
+    display: none;
+}
+.fm .fm-services{
+    display: block;
+}
+
+.trn .training{
+    display: block;
+}
+.trn .consulting{
+    display: none;
+}
+.trn .fm-services{
+    display: none;
+}
+.blue{
+    border-bottom: 4px solid blue;
+}
+.green{
+    border-bottom: 4px solid green;
+
+}
+.yellow{
+    border-bottom: 4px solid yellow;
+
+}
