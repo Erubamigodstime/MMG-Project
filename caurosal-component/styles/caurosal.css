@@ -11,8 +11,17 @@ main{
     align-items: center;
     justify-content: center;
 }
+h2{
+    text-align: center;
+    color: rgb(105, 75, 36);
+    margin-bottom: 20px;
+    background-color: darkgray;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+}
 .main-div{   
-    margin-top: 250px;
+    margin-top: 150px;
     width: 400px;
     height: 300px;    
    
@@ -74,7 +83,7 @@ button{
 }
 .text{
     margin-bottom: 20px;
-    border: 3px solid black;
+    
 }
 .text-image{
     margin-top: 8px;
@@ -146,13 +155,13 @@ img{
     display: none;
 }
 .blue{
-    border-bottom: 4px solid blue;
+   background-color: blue;
 }
 .green{
-    border-bottom: 4px solid green;
+    background-color: green;
 
 }
 .yellow{
-    border-bottom: 4px solid yellow;
+   background-color: yellow;
 
 }

@@ -1,7 +1,7 @@
 const trainigBtn = document.querySelector('#trainbtn');
 const consultBtn = document.querySelector('#consulbtn');
 const fmBtn = document.querySelector('#fmbtn');
-
+const h2 = document.querySelector('h2');
 const display = document.querySelector('article')
 
 trainigBtn.addEventListener("click", () => {
@@ -14,7 +14,10 @@ trainigBtn.addEventListener("click", () => {
 	display.classList.remove("component");	
 	display.classList.add("trn");
 	display.classList.remove("con");
-	display.classList.remove("fm");
+	display.classList.remove("fm");	
+	h2.classList.remove('blue');
+	h2.classList.remove('green');
+	h2.classList.add('yellow');
 });
 consultBtn.addEventListener("click", () => {
 	consultBtn.classList.remove("def");	
@@ -27,6 +30,9 @@ consultBtn.addEventListener("click", () => {
 	display.classList.add("con");
 	display.classList.remove("trn");
 	display.classList.remove("fm");
+	h2.classList.remove('blue')
+	h2.classList.remove('yellow')
+	h2.classList.add('green')
 	
 });
 
@@ -42,18 +48,10 @@ function showList() {
 	display.classList.add("fm");
 	display.classList.remove("con");
 	display.classList.remove("trn");
+	h2.classList.remove('yellow');
+	h2.classList.remove('green');
+	h2.classList.add('blue');
 }
 
 
 
-// trainigBtn.addEventListener("click", () =>{
-// 	
-// });
-// consultBtn.addEventListener("click", () =>{
-// 
-// });
- 
-// fmBtn.addEventListener("click", () =>{
-// 
-
-// } );
